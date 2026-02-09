@@ -223,7 +223,7 @@ jobs:
           tag_name: v${{ env.YT_VERSION }}-5.0.1
           name: v${{ env.YT_VERSION }}-5.0.1 - YTLitePlus
           files: main/packages/*.ipa
-          draft: true
+          draft: false
           body_path: ${{ github.workspace }}/release_notes.md
 
       - name: Update Altstore Source with latest release
